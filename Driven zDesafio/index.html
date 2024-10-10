@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+</head>
+<body>
+    <div class="geral">
+        <div class="topo">
+            <h1 class="nomeApp">DrivenEats</h1>
+            <p class="slogan">Sua comida em 6 minutos</p>
+        </div>
+        <div class="conteudo">
+            <h2 class="etapa-1">Primeiro, seu prato</h2>
+            <div class="pratos">
+                <div class="prato-1" onclick="selecionarPrato(this)">
+                    <img class="pf-frango" src="projeto__driven-eats__imagens/pf_frango.jpg"/>
+                    <h4 class="nome-prato-1">Frango Yin Yang</h4>
+                    <p class="descricao-prato-1">Um pouco de batata,</br> um pouco de salada</p>
+                    <p class="valor-prato-1">R$ 14,90</p>
+                </div>
+                <div class="prato-2" onclick="selecionarPrato(this)">
+                    <img class="pf-carne" src="projeto__driven-eats__imagens/pf_carne.jpg"/>
+                    <h4 class="nome-prato-2">Carne e ovo</h4>
+                    <p class="descricao-prato-2">Acompanha arroz,</br> feijão e salada</p>
+                    <p class="valor-prato-2">R$ 17,90</p>
+                </div>
+                <div class="prato-3" onclick="selecionarPrato(this)">
+                    <img class="pf-calabresa" src="projeto__driven-eats__imagens/pf_calabresa.png"/>
+                    <h4 class="nome-prato-3">Calabresa</h4>
+                    <p class="descricao-prato-3">Acompanha arroz,</br> feijão e salada</p>
+                    <p class="valor-prato-3">R$ 16,90</p>
+                </div>
+            </div>
+            <h2 class="etapa-2">Agora, sua bebida</h2>
+            <div class="bebidas">
+                <div class="bebida-1" onclick="selecionarBebida(this)">
+                    <img class="bebida-cola" src="projeto__driven-eats__imagens/coca.png"/>
+                    <h4 class="coca-cola">Coca-cola</h4>
+                    <p class="descricao-bebida-1">Lata 350ml</p>
+                    <p class="valor-bebida-1">R$ 6,90</p>
+                </div>
+                <div class="bebida-2" onclick="selecionarBebida(this)">
+                    <img class="bebida-fanta" src="projeto__driven-eats__imagens/fanta.png"/>
+                    <h4 class="fanta-laranja">Fanta Laranja</h4>
+                    <p class="descricao-bebida-2">Lata 350ml</p>
+                    <p class="valor-bebida-2">R$ 4,90</p>
+                </div>
+                <div class="bebida-3" onclick="selecionarBebida(this)">
+                    <img class="bebida-suco" src="projeto__driven-eats__imagens/suco.png"/>
+                    <h4 class="suco-laranja">Suco de Laranja</h4>
+                    <p class="descricao-bebida-3">500ml</p>
+                    <p class="valor-bebida-3">R$ 7,90</p>
+                </div>
+            </div>
+            <h2 class="etapa-3">Por fim, sua sobremesa</h2>
+            <div class="sobremesa">
+                <div class="sobremesa-1" onclick="selecionarSobremesa(this)">
+                    <img class="sobremesa-pudim" src="projeto__driven-eats__imagens/pudim.jpg"/>
+                    <h4 class="pudim">Pudim</h4>
+                    <p class="descricao-sobremesa-1">Apenas um pudim</p>
+                    <p class="valor-sobremesa-1">R$ 7,90</p>
+                </div>
+                <div class="sobremesa-2" onclick="selecionarSobremesa(this)">
+                    <img class="sobremesa-mousse" src="projeto__driven-eats__imagens/mouse.jpg"/>
+                    <h4 class="mousse">Mousse</h4>
+                    <p class="descricao-sobremesa-2">Cremoso e gostoso</p>
+                    <p class="valor-sobremesa-2">R$ 6,90</p>
+                </div>
+                <div class="sobremesa-3" onclick="selecionarSobremesa(this)">
+                    <img class="sobremesa-brownie" src="projeto__driven-eats__imagens/brownie.jpg"/>
+                    <h4 class="brownie">Brownie</h4>
+                    <p class="descricao-sobremesa-3">É um bolinho</p>
+                    <p class="valor-sobremesa-3">R$ 4,90</p>
+                </div>
+            </div>
+        </div>
+        <div class="tela_de_confirmacao escondido">
+            <div class="caixa_de_confirmacao">
+                <p class="confirmacao_pedido">Confirme seu pedido</p>
+                <p class="p_confirmacao_comida">Frango Yin Yang: 14.90</p>
+                <p class="p_confirmacao_bebida">Coquinha gelada: 4.90</p>
+                <p class="p_confirmacao_sobremesa">Pudim: 7.90</p>
+                <p class="p_confirmacao_valor">Total:27.70</p>
+                <a class="link_zap" onclick="enviarPedido()">Tudo certo, pode pedir!</a>
+                <button class="cancelar" onclick="cancelarPedido()">Cancelar</button>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="fechar-pedido">
+                <button class="botao-fechar-pedido" onclick="mostrarConfirmacao()">Selecione os 3 itens</br> para fechar o pedido</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
